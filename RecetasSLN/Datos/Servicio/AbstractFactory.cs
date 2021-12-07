@@ -8,6 +8,8 @@ namespace RecetasSLN.Datos.Servicio
 {
     internal abstract class AbstractFactory
     {
-        public abstract IDao CreateRecetasDao(); 
+        public abstract IDao FactoryRecetasDao(); 
+
+        public abstract TipoRecetasDao FactoryTipoRecetasDao();
     }
 }

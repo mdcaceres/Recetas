@@ -8,9 +8,14 @@ namespace RecetasSLN.Datos.Servicio
 {
     internal class Factory : AbstractFactory
     {
-        public override IDao CreateRecetasDao()
+        public override IDao FactoryRecetasDao()
         {
             return new RecetasDao();
+        }
+
+        public override TipoRecetasDao FactoryTipoRecetasDao()
+        {
+            return new TipoRecetasDao();
         }
     }
 }

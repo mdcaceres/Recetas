@@ -13,5 +13,16 @@ namespace RecetasSLN.presentación
         public TipoReceta tipo { get; set; }
         public string cheff { get; set; }
 
+        public DateTime fecha_baja { get; set; }
+
+        public bool Eliminada()
+        {
+            if(fecha_baja == null)
+            {
+                return false; 
+            }
+            return true;
+        }
+
     }
 }

@@ -11,6 +11,10 @@ namespace RecetasSLN.Datos
     internal interface IDao
     {
         IEnumerable<Receta> GetAll(string commandText);
-        IEnumerable<Object> Get(object filter,string commandText, Dictionary<string,Object> parameters);
+        IEnumerable<Receta> Get(string commandText, Dictionary<string,Object> parameters);
+        //IEnumerable<Receta> Get(string commandText);
+        void PutFecha(Receta receta);
+        DateTime GetFecha(int value);
+        
     }
 }

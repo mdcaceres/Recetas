@@ -53,6 +53,7 @@
     <Compile Include="Datos\Servicio\IServicio.cs" />
     <Compile Include="Datos\Servicio\Servicio.cs" />
     <Compile Include="Datos\SqlDao.cs" />
+    <Compile Include="Datos\TipoRecetasDao.cs" />
     <Compile Include="presentación\FrmConsultarRecetas.cs">
       <SubType>Form</SubType>
     </Compile>
